@@ -1,0 +1,33 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+html { height: 100%; overflow-y: scroll; }
+
+body { height: 100%; background-color: #ddd; line-height: 1.5; }
+
+h1 { padding: 20px 0; font-size: 36px; }
+
+h2 { padding: 20px 0; font-size: 32px; text-align: center; }
+
+p { padding: 0 0 25px; }
+
+a { color: #3399ff; }
+
+.container { position: relative; width: 920px; min-height: 500%; margin: 0 auto; padding: 0 20px; background: #fff; }
+
+.floatbox { position: absolute; top: 0; right: 20px; width: 198px; height: 198px; border: 1px solid #ccc; background-color: #ddeecc; margin-top: 20px; text-align: center; font-size: 24px; line-height: 198px; }

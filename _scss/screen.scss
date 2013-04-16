@@ -1,0 +1,66 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@mixin clearfix {
+	*zoom: 1;
+	&:after {
+		content:""; display:block; clear:both;
+	}
+}
+
+$linkcolor: #3399ff;
+$hoverlinkcolor: #66ccff;
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+body {
+	height: 100%;
+	background-color: #ddd;
+	line-height: 1.5;
+}
+
+h1 {
+	padding: 20px 0;
+	font-size: 36px;
+}
+h2 {
+	padding: 20px 0;
+	font-size: 32px;
+	text-align: center;
+}
+p {
+	padding: 0 0 25px;
+}
+a {
+	color: $linkcolor;
+}
+
+.container {
+	position: relative;
+	width: 920px;
+	min-height: 500%;
+	margin: 0 auto;
+	padding: 0 20px;
+	background: #fff;
+}
+.floatbox {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	width: 198px;
+	height: 198px;
+	border: 1px solid #ccc;
+	background-color: #ddeecc;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 198px;
+}
+
