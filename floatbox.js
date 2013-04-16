@@ -20,6 +20,7 @@ $.Floatbox = Backbone.View.extend({
 		_.extend(this.opt, options);
 		_.bindAll(this);
 		this.defaultTop = parseInt(this.$el.css('top'), 10);
+		this.parentOffsetTop = this.$el.offsetParent().offset().top;
 
 		$(window).on('scroll', this.update);
 	},
@@ -30,7 +31,9 @@ $.Floatbox = Backbone.View.extend({
 	},
 	move: function () {
 		var scrollTop = $(window).scrollTop();
-		console.log(scrollTop);
+		scrollTop -= this.parentOffsetTop;
+		scrollTop = (scrollTop < this.defaultTop) ? this.defaultTop : scrollTop;
+
 		if (this.opt.animation === true) {
 			this.$el.stop(true, true).animate({
 				'top': scrollTop
